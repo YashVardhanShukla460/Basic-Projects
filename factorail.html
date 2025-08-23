@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let x = prompt("Enter the number");
+         x = Number(x);
+         let fact = 1;
+         for(let i=x;i>0;i--){
+            fact = fact*i;
+         }
+         console.log(fact);
+         function factorial(number){
+         let arr = Array.from(Array(number+1).keys());
+         let c = arr.slice(1,).reduce((a,b) => a*b);
+         return c;
+         }
+         console.log(factorial(x));
+    </script>
+</body>
+</html>

@@ -1,0 +1,33 @@
+/* Reset */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #111;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;   /* full screen height */
+}
+
+/* Center container */
+div {
+  text-align: center;
+}
+
+/* Title */
+#text {
+   font-size: 24px;
+  margin-bottom: 20px;
+} 
+
+/* Clock display */
+#clock {
+  font-size: 48px;
+  font-weight: bold;
+  background: black;
+  padding: 20px 40px;
+  border-radius: 10px;
+  border: 2px solid cyan;
+  box-shadow: 0 0 20px cyan;
+}
