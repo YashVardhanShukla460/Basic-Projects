@@ -1,0 +1,50 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    height: 100%;
+}
+
+.nav{
+    background-color: purple;
+    height: 5%;
+    padding: 10px;
+}
+.container{
+    /* background-color: red; */
+    display: flex;
+    justify-content: center;
+    margin-top: 3%
+}
+.gamecontainer{
+    display: grid;
+    grid-template-columns: repeat(3,10vw);
+    grid-template-rows: repeat(3,10vw);
+}
+.box{
+    border: 1px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box:hover{
+    background-color: yellow;
+}
+.br0{
+    border-right: none;
+}
+.bl0{
+    border-left: none;
+}
+.bt0{
+    border-top: none;
+}
+.bb0{
+    border-bottom: none;
+}
