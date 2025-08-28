@@ -9,23 +9,31 @@ body {
     height: 100%;
 }
 
-.nav{
+.nav {
     background-color: purple;
     height: 5%;
     padding: 10px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
 }
-.container{
-    /* background-color: red; */
+
+
+.container {
     display: flex;
     justify-content: center;
-    margin-top: 3%
+    align-items: flex-start;
+    margin-top: 3%;
+    gap: 20px; 
 }
-.gamecontainer{
+
+.gamecontainer {
     display: grid;
-    grid-template-columns: repeat(3,10vw);
-    grid-template-rows: repeat(3,10vw);
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
 }
-.box{
+
+.box {
     border: 1px solid black;
     font-size: 8vw;
     cursor: pointer;
@@ -33,18 +41,72 @@ body {
     justify-content: center;
     align-items: center;
 }
-.box:hover{
+
+.box:hover {
     background-color: yellow;
 }
-.br0{
-    border-right: none;
+
+.br0 { border-right: none; }
+.bl0 { border-left: none; }
+.bt0 { border-top: none; }
+.bb0 { border-bottom: none; }
+
+.gameinfo h1 {
+    font-size: 2.5rem;
+    margin: 10px 0;
+    text-align: center;
+    font-family: 'Baloo Bhaina 2', cursive;
 }
-.bl0{
-    border-left: none;
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 15px;
 }
-.bt0{
-    border-top: none;
+
+.info .controls{
+    font-size: 22px;
+    margin-bottom: 10px;
 }
-.bb0{
-    border-bottom: none;
+
+#reset {
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    background-color: purple;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#reset:hover {
+    background-color: darkmagenta;
+}
+
+@media screen and (max-width: 950px) {
+    .container {
+        flex-direction: column;   
+        align-items: center;
+    }
+
+    .gamecontainer {
+        grid-template-rows: repeat(3, 20vw);
+        grid-template-columns: repeat(3, 20vw);
+    }
+
+    .gameinfo h1 {
+        font-size: 1.5rem;
+    }
+
+    .info {
+        font-size: 18px;
+    }
+
+    #reset {
+        font-size: 16px;
+        padding: 8px 16px;
+    }
 }

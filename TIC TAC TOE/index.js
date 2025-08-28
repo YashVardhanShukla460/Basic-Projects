@@ -42,7 +42,7 @@ Array.from(boxes).forEach(element =>{
     })
 })
 
-// Make sure reset is defined as a DOM element
+
 let reset = document.getElementById('reset');
 reset.addEventListener('click',()=>{
     let boxtexts = document.querySelectorAll('.boxtext');
