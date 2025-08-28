@@ -1,0 +1,121 @@
+/* Reset & Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background-color: #f9fafb; /* soft background */
+  color: #333;              /* better readability */
+}
+
+/* Header */
+#header h1 {
+  background-color: #00cfc2; /* softer teal instead of neon */
+  height: 10vh;
+  display: flex;
+  align-items: center;       /* vertically center text */
+  justify-content: center;   /* horizontally center text */
+  font-size: 2rem;
+  font-weight: 600;
+  color: white;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1); 
+}
+
+/* Input Area */
+#inputarea {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;   /* keep left aligned */
+  margin: 30px auto;      /* center horizontally */
+  width: 600px;            
+  gap: 20px;
+  font-size: 1.5rem;
+}
+
+/* Task Input */
+#task {
+  width: 100%;
+  height: 50px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  padding: 0 12px;
+  font-size: 1rem;
+  transition: border 0.3s;
+}
+#task:hover{
+    border-color: #00cfc2;     /* subtle highlight on hover */
+}
+#task:focus {
+  outline: none;
+  border-color: #00cfc2;     /* highlight on focus */
+}
+
+/* Add Task Button */
+#addtask {
+  align-self: center;        /* centers button under input */
+  width: 140px;
+  height: 40px;
+  font-size: 1rem;
+  background-color: #8b5cf6; /* modern violet */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+#addtask:hover {
+  background-color: #7c3aed; /* darker on hover */
+  transform: scale(1.05);
+}
+
+/* Subheading */
+h3 {
+  margin: 30px auto 10px auto;
+  width: 600px;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #444;
+}
+
+/* Task List */
+#tasklist {
+  margin: 10px auto;
+  width: 600px;
+  font-size: 1rem;
+  list-style: none;
+  padding: 0;
+}
+#tasklist li {
+  background: white;
+  padding: 12px 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: background 0.3s;
+}
+#tasklist li:hover {
+  background: #f3f4f6;
+}
+.complete-btn {
+  background-color: black;
+  color: white;
+  opacity: 0.7;
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.complete-btn:hover {
+  opacity: 1; /* more visible when hovered */
+}
+.delete-btn:hover{
+cursor: pointer;
+}
